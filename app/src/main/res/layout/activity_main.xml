@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.mymusicapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/allSongs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/all_songs"
+        android:gravity="center_vertical"
+        android:onClick="openAllSongs"
+        android:padding="16dp"
+        android:text="@string/all_songs"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/last_added"
+        android:layout_below="@id/allSongs"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/last_added"
+        android:gravity="left"
+        android:onClick="openLastAdded"
+        android:padding="14dp"
+        android:text="@string/last_added"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/most_played"
+        android:layout_toRightOf="@id/last_added"
+        android:layout_below="@id/allSongs"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/most_play"
+        android:gravity="center_horizontal"
+        android:onClick="openMostPlayed"
+        android:padding="14dp"
+        android:text="@string/Most_Played"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/favourites"
+        android:layout_below="@id/allSongs"
+        android:layout_toRightOf="@id/most_played"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/favourites"
+        android:gravity="right"
+        android:onClick="openFavourites"
+        android:padding="14dp"
+        android:text="@string/favourites"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/albums"
+        android:layout_below="@id/last_added"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/albums"
+        android:gravity="left"
+        android:onClick="openAlbums"
+        android:padding="30dp"
+        android:text="@string/albums"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/genres"
+        android:layout_below="@id/most_played"
+        android:layout_toRightOf="@id/albums"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/genres"
+        android:gravity="center_horizontal"
+        android:onClick="openGenres"
+        android:padding="32dp"
+        android:text="@string/Genres"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/artists"
+        android:layout_below="@id/favourites"
+        android:layout_toRightOf="@id/genres"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/artists"
+        android:gravity="right"
+        android:onClick="openArtists"
+        android:padding="32dp"
+        android:text="@string/Artists"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/records"
+        android:layout_below="@id/albums"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/records"
+        android:gravity="left"
+        android:onClick="openRecords"
+        android:padding="29dp"
+        android:text="@string/Records"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/folders"
+        android:layout_below="@+id/genres"
+        android:layout_toRightOf="@id/records"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/folders"
+        android:gravity="center_horizontal"
+        android:onClick="openFolders"
+        android:padding="30dp"
+        android:text="@string/Folders"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/new_song"
+        android:layout_below="@id/artists"
+        android:layout_toRightOf="@id/folders"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/new_song"
+        android:gravity="right"
+        android:onClick="openNew"
+        android:padding="20dp"
+        android:text="@string/New"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

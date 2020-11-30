@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Music App</string>
+    <string name="all_songs">All Songs</string>
+    <string name="last_added">Last Added</string>
+    <string name="Most_Played">Most Played</string>
+    <string name="favourites">Favourites</string>
+    <string name="albums">Albums</string>
+    <string name="Genres">Genres</string>
+    <string name="Artists">Artists</string>
+    <string name="Records">Records</string>
+    <string name="Folders">Folders</string>
+    <string name="New">New Songs</string>
+</resources>
